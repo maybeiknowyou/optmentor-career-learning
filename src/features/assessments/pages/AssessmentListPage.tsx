@@ -1,0 +1,10 @@
+import { ArrowRight, ClipboardCheck } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Badge } from '../../../components/ui/Badge'
+import { Button } from '../../../components/ui/Button'
+import { Card } from '../../../components/ui/Card'
+import { assessments } from '../../../data/assessments'
+import { careers } from '../../../data/careers'
+import { latestAttempt } from '../../../services/assessmentService'
+
+export function AssessmentListPage() { return <div className="mx-auto max-w-[1420px] space-y-6"><div><Badge>Assessments</Badge><h1 className="mt-3 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">Test your understanding</h1><p className="mt-3 max-w-2xl text-base leading-7 text-muted">Short roadmap-linked MCQs with a 60% passing threshold. Results are saved locally in this browser.</p></div><div className="grid gap-5 lg:grid-cols-2">{assessments.map((assessment) => { const career = careers.find((item) => item.id === assessment.careerId); const attempt = latestAttempt(assessment.id); return <Card key={assessment.id} className="p-6"><div className="flex items-start justify-between gap-4"><span className="grid size-11 place-items-center rounded-xl bg-brand-blue-soft text-brand-blue"><ClipboardCheck size={22} /></span><Badge tone={attempt?.passed ? 'green' : 'slate'}>{attempt ? `${attempt.percentage}% ${attempt.passed ? 'Passed' : 'Not passed'}` : 'Not started'}</Badge></div><h2 className="mt-5 text-xl font-extrabold text-ink">{assessment.title}</h2><p className="mt-2 text-sm font-semibold text-brand-blue">{career?.title}</p><p className="mt-3 text-sm leading-6 text-muted">{assessment.description}</p><div className="mt-5 flex items-center justify-between gap-3"><span className="text-sm text-muted">{assessment.questions.length} questions · Pass at {assessment.passingPercentage}%</span><Link to={`/career-learning/assessments/${assessment.id}`}><Button size="sm" rightIcon={<ArrowRight size={16} />}>{attempt ? 'Retake' : 'Start Assessment'}</Button></Link></div></Card> })}</div></div> }

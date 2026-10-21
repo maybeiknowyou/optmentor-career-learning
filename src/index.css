@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #062347;
+  --color-brand-navy-deep: #031b38;
+  --color-brand-blue: #1677f2;
+  --color-brand-blue-hover: #0d63d8;
+  --color-brand-blue-soft: #eaf3ff;
+  --color-page: #f4f7fb;
+  --color-line: #dce5f0;
+  --color-ink: #0f172a;
+  --color-muted: #64748b;
+  --color-success: #12a66a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --shadow-card: 0 10px 30px rgba(15, 35, 65, 0.06);
+}
+
+:root {
+  color: var(--color-ink);
+  background: var(--color-page);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; min-height: 100%; background: var(--color-page); }
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { color: white; background: var(--color-brand-blue); }
+:focus-visible { outline: 3px solid rgba(22, 119, 242, 0.35); outline-offset: 2px; }
+
+@keyframes optmentor-page-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes optmentor-stroke { from { transform: scaleY(0); transform-origin: top; } to { transform: scaleY(1); transform-origin: top; } }
+@keyframes optmentor-pop { 0% { transform: scale(.88); opacity: .5; } 70% { transform: scale(1.06); } 100% { transform: scale(1); opacity: 1; } }
+
+#root { animation: optmentor-page-in 280ms ease-out both; }
+.career-card-stagger { animation: optmentor-page-in 360ms ease-out both; animation-delay: calc(var(--card-index, 0) * 45ms); }
+.roadmap-line { animation: optmentor-stroke 520ms ease-out both; }
+.roadmap-available { box-shadow: 0 0 0 5px rgba(22,119,242,.10), 0 8px 24px rgba(22,119,242,.18); }
+.roadmap-completed { animation: optmentor-pop 320ms ease-out both; }
+.badge-earned { animation: optmentor-pop 320ms ease-out both; }
+.tab-underline { transform-origin: left; animation: optmentor-page-in 220ms ease-out both; }
+.interactive-lift { transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+.interactive-lift:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(15,35,65,.11); }
+.motion-reveal { opacity: 0; transform: translateY(12px) scale(.985); transition: opacity 320ms ease, transform 380ms cubic-bezier(.2,.8,.2,1); }
+.motion-reveal-visible { opacity: 1; transform: translateY(0) scale(1); }
+
+.optmentor-theme-light { --module-page: #f4f7fb; --module-surface: #ffffff; --module-surface-soft: #f8fbff; --module-border: #dce5f0; --module-ink: #0f172a; --module-muted: #64748b; }
+.optmentor-theme-dark { --module-page: #0b1728; --module-surface: #13243a; --module-surface-soft: #182c45; --module-border: #2b4058; --module-ink: #edf5ff; --module-muted: #a7bad0; background: var(--module-page); color: var(--module-ink); color-scheme: dark; }
+.optmentor-theme-dark.bg-page, .optmentor-theme-dark .bg-page { background-color: var(--module-page) !important; }
+.optmentor-theme-dark .bg-white, .optmentor-theme-dark.bg-white { background-color: var(--module-surface) !important; }
+.optmentor-theme-dark .bg-slate-50, .optmentor-theme-dark .bg-slate-100 { background-color: var(--module-surface-soft) !important; }
+.optmentor-theme-dark .text-ink { color: var(--module-ink) !important; }
+.optmentor-theme-dark .text-muted, .optmentor-theme-dark .text-slate-500, .optmentor-theme-dark .text-slate-600, .optmentor-theme-dark .text-slate-700 { color: var(--module-muted) !important; }
+.optmentor-theme-dark .border-line, .optmentor-theme-dark .border-slate-300 { border-color: var(--module-border) !important; }
+.optmentor-theme-dark .shadow-card { box-shadow: 0 12px 30px rgba(0,0,0,.18); }
+.optmentor-theme-dark input, .optmentor-theme-dark textarea, .optmentor-theme-dark select { background-color: var(--module-surface); color: var(--module-ink); border-color: var(--module-border); }
+.optmentor-theme-dark .hover\:bg-slate-50:hover { background-color: var(--module-surface-soft) !important; }
+.optmentor-theme-dark .bg-slate-200 { background-color: #29405a !important; }
+.optmentor-theme-dark .bg-brand-blue-soft { background-color: #16395d !important; }
+.optmentor-theme-dark .text-brand-navy { color: #dbeafe !important; }
+.optmentor-theme-dark .bg-brand-navy { background-color: #061326 !important; }
+.optmentor-theme-dark .bg-slate-950\/40 { background-color: rgba(0,0,0,.62) !important; }
+.optmentor-theme-dark .roadmap-available { box-shadow: 0 0 0 5px rgba(56,189,248,.12), 0 8px 24px rgba(14,165,233,.18); }
+.optmentor-theme-dark .roadmap-line { background-color: #38526d !important; }
+.optmentor-theme-dark .interactive-lift:hover { box-shadow: 0 16px 34px rgba(0,0,0,.28); }
+.optmentor-theme-dark .shadow-xl { box-shadow: 0 18px 42px rgba(0,0,0,.3); }
+.optmentor-theme-dark header { background-color: rgba(19,36,58,.95) !important; }
+.optmentor-theme-dark header button.bg-white { background-color: var(--module-surface) !important; }
+.optmentor-theme-dark .text-blue-100 { color: #c4d8ef !important; }
+.optmentor-theme-dark .text-blue-200 { color: #9bb5d1 !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
