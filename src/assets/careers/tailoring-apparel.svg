@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGradTailor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="50%" stop-color="#6d28d9" />
+      <stop offset="100%" stop-color="#2e1065" />
+    </linearGradient>
+    <radialGradient id="glowTailor" cx="75%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGradTailor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGradTailor)" />
+  <circle cx="820" cy="270" r="320" fill="url(#glowTailor)" />
+
+  <!-- Stitching Grid & Measuring Tape Motif -->
+  <g stroke="#e9d5ff" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.25">
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="260" x2="1200" y2="260" />
+    <line x1="0" y1="400" x2="1200" y2="400" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="250" y1="0" x2="250" y2="675" />
+    <line x1="550" y1="0" x2="550" y2="675" />
+    <line x1="850" y1="0" x2="850" y2="675" />
+  </g>
+
+  <!-- Apparel / Sewing Machine Illustration -->
+  <g transform="translate(680, 160)">
+    <!-- Sewing Machine Body -->
+    <path d="M80,310 L380,310 L380,270 L340,270 L340,110 L160,110 L160,170 L200,170 L200,190 L130,190 L130,270 L80,270 Z" fill="#ffffff" fill-opacity="0.15" stroke="#f472b6" stroke-width="3" />
+    <!-- Needle Bar -->
+    <line x1="160" y1="190" x2="160" y2="270" stroke="#fbcfe8" stroke-width="3" />
+    <circle cx="160" cy="275" r="4" fill="#f43f5e" />
+    <!-- Hand wheel -->
+    <ellipse cx="340" cy="170" rx="14" ry="40" fill="#2e1065" stroke="#c084fc" stroke-width="2.5" />
+    <!-- Spool of Thread -->
+    <rect x="270" y="70" width="30" height="40" rx="4" fill="#f472b6" stroke="#fbcfe8" stroke-width="1.5" />
+    <line x1="285" y1="70" x2="285" y2="110" stroke="#ffffff" stroke-width="2" />
+    <!-- Thread line flowing to needle -->
+    <path d="M285,70 Q220,40 160,110 L160,190" fill="none" stroke="#f472b6" stroke-width="1.5" stroke-dasharray="3,3" />
+    <!-- Measuring tape arc -->
+    <path d="M60,340 C140,320 280,360 400,330" fill="none" stroke="#fbbf24" stroke-width="10" stroke-linecap="round" />
+    <line x1="100" y1="330" x2="100" y2="340" stroke="#78350f" stroke-width="2" />
+    <line x1="140" y1="325" x2="140" y2="335" stroke="#78350f" stroke-width="2" />
+    <line x1="180" y1="330" x2="180" y2="340" stroke="#78350f" stroke-width="2" />
+    <line x1="220" y1="335" x2="220" y2="345" stroke="#78350f" stroke-width="2" />
+    <line x1="260" y1="340" x2="260" y2="350" stroke="#78350f" stroke-width="2" />
+    <line x1="300" y1="340" x2="300" y2="350" stroke="#78350f" stroke-width="2" />
+    <line x1="340" y1="335" x2="340" y2="345" stroke="#78350f" stroke-width="2" />
+  </g>
+
+  <!-- Left Card -->
+  <g transform="translate(80, 110)">
+    <rect width="440" height="390" rx="24" fill="url(#cardGradTailor)" stroke="#c084fc" stroke-width="1.5" />
+    <rect x="32" y="36" width="180" height="34" rx="17" fill="#7e22ce" fill-opacity="0.4" stroke="#c084fc" stroke-width="1" />
+    <circle cx="50" cy="53" r="6" fill="#f472b6" />
+    <text x="66" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#f3e8ff">FASHION &amp; TEXTILES</text>
+
+    <text x="32" y="125" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Tailoring, Stitching &amp;</text>
+    <text x="32" y="165" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#f472b6" letter-spacing="-0.5">Apparel Design</text>
+
+    <text x="32" y="210" font-family="system-ui, sans-serif" font-size="15" fill="#f5d0fe">
+      <tspan x="32" dy="0">Pattern drafting, industrial garment cutting,</tspan>
+      <tspan x="32" dy="24">sewing technology, embroidery &amp; quality control.</tspan>
+    </text>
+
+    <g transform="translate(32, 275)">
+      <rect width="175" height="70" rx="14" fill="#2e1065" fill-opacity="0.7" stroke="#7e22ce" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#e9d5ff">Pattern Drafting</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">CAD / Manual</text>
+    </g>
+
+    <g transform="translate(225, 275)">
+      <rect width="180" height="70" rx="14" fill="#2e1065" fill-opacity="0.7" stroke="#7e22ce" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#e9d5ff">Production Skill</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Industrial Sewing</text>
+    </g>
+  </g>
+</svg>

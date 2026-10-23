@@ -31,7 +31,9 @@ export function RoadmapStagePage() {
   const nextStage = roadmap.stages[stageIndex + 1]
   const progress = careerProgress(career.id, roadmap.stages.length)
   const stageResources = resourcesForStage(career.id, stage.id)
-  const assessment = getAssessmentById(`assessment-${career.id}`) ?? (career.id === 'cybersecurity-ethical-hacking' && stage.order === 1 ? getAssessmentById('assessment-cybersecurity-networking') : undefined)
+  const assessment = (career.id === 'cybersecurity-ethical-hacking' && stage.order === 1)
+    ? getAssessmentById('assessment-cybersecurity-networking')
+    : getAssessmentById(`assessment-${career.id}`)
   const careerKey = career.id
   const stageKey = stage.id
   function markComplete() { if (available && !completed) completeStage(careerKey, stageKey) }

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGradData" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c4a6e" />
+      <stop offset="50%" stop-color="#0369a1" />
+      <stop offset="100%" stop-color="#082f49" />
+    </linearGradient>
+    <radialGradient id="glowData" cx="72%" cy="38%" r="48%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGradData" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGradData)" />
+  <circle cx="820" cy="250" r="320" fill="url(#glowData)" />
+
+  <!-- Multi-table Database / Query Schematics -->
+  <g transform="translate(680, 130)">
+    <!-- SQL Table 1 -->
+    <rect x="40" y="40" width="160" height="110" rx="8" fill="#082f49" stroke="#38bdf8" stroke-width="1.5" />
+    <rect x="40" y="40" width="160" height="28" rx="8" fill="#0284c7" />
+    <text x="50" y="58" font-family="monospace" font-size="12" fill="#ffffff">table: metrics</text>
+    <line x1="50" y1="90" x2="180" y2="90" stroke="#0ea5e9" stroke-width="1" opacity="0.4" />
+    <line x1="50" y1="115" x2="180" y2="115" stroke="#0ea5e9" stroke-width="1" opacity="0.4" />
+
+    <!-- SQL Table 2 -->
+    <rect x="240" y="70" width="160" height="110" rx="8" fill="#082f49" stroke="#38bdf8" stroke-width="1.5" />
+    <rect x="240" y="70" width="160" height="28" rx="8" fill="#0284c7" />
+    <text x="250" y="88" font-family="monospace" font-size="12" fill="#ffffff">table: cohorts</text>
+    <line x1="250" y1="120" x2="380" y2="120" stroke="#0ea5e9" stroke-width="1" opacity="0.4" />
+    <line x1="250" y1="145" x2="380" y2="145" stroke="#0ea5e9" stroke-width="1" opacity="0.4" />
+
+    <!-- Relationship connector -->
+    <path d="M200,90 C220,90 220,120 240,120" fill="none" stroke="#facc15" stroke-width="2" />
+
+    <!-- Donut Chart & Heatmap -->
+    <g transform="translate(80, 200)">
+      <circle cx="80" cy="80" r="60" fill="none" stroke="#0284c7" stroke-width="24" />
+      <circle cx="80" cy="80" r="60" fill="none" stroke="#38bdf8" stroke-width="24" stroke-dasharray="140 240" />
+      <circle cx="80" cy="80" r="60" fill="none" stroke="#fbbf24" stroke-width="24" stroke-dasharray="60 320" stroke-dashoffset="-140" />
+      <text x="80" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#ffffff">94%</text>
+    </g>
+
+    <!-- Bar chart visualization -->
+    <g transform="translate(230, 220)">
+      <rect x="0" y="60" width="20" height="50" rx="3" fill="#38bdf8" />
+      <rect x="28" y="30" width="20" height="80" rx="3" fill="#38bdf8" />
+      <rect x="56" y="10" width="20" height="100" rx="3" fill="#60a5fa" />
+      <rect x="84" y="40" width="20" height="70" rx="3" fill="#38bdf8" />
+      <rect x="112" y="20" width="20" height="90" rx="3" fill="#a78bfa" />
+    </g>
+  </g>
+
+  <!-- Left Card -->
+  <g transform="translate(80, 110)">
+    <rect width="440" height="390" rx="24" fill="url(#cardGradData)" stroke="#38bdf8" stroke-width="1.5" />
+    <rect x="32" y="36" width="190" height="34" rx="17" fill="#0369a1" fill-opacity="0.4" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="50" cy="53" r="6" fill="#38bdf8" />
+    <text x="66" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#bae6fd">BUSINESS INTELLIGENCE</text>
+
+    <text x="32" y="125" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Data Analytics &amp;</text>
+    <text x="32" y="165" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#38bdf8" letter-spacing="-0.5">Visualization</text>
+
+    <text x="32" y="210" font-family="system-ui, sans-serif" font-size="15" fill="#f0f9ff">
+      <tspan x="32" dy="0">Spreadsheets, SQL querying, statistics, Power BI,</tspan>
+      <tspan x="32" dy="24">Python data cleaning &amp; executive dashboards.</tspan>
+    </text>
+
+    <g transform="translate(32, 275)">
+      <rect width="175" height="70" rx="14" fill="#082f49" fill-opacity="0.8" stroke="#0284c7" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#7dd3fc">Core Stack</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">SQL &amp; Power BI</text>
+    </g>
+
+    <g transform="translate(225, 275)">
+      <rect width="180" height="70" rx="14" fill="#082f49" fill-opacity="0.8" stroke="#0284c7" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#7dd3fc">Methodology</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">EDA &amp; Metrics</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGradDairy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e7490" />
+      <stop offset="50%" stop-color="#0891b2" />
+      <stop offset="100%" stop-color="#164e63" />
+    </linearGradient>
+    <radialGradient id="glowDairy" cx="72%" cy="38%" r="48%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGradDairy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgGradDairy)" />
+  <circle cx="800" cy="260" r="330" fill="url(#glowDairy)" />
+
+  <!-- Flowing Water / Aquaculture waves -->
+  <path d="M0,480 C300,430 500,520 800,470 C1000,430 1100,490 1200,460 L1200,675 L0,675 Z" fill="#155e75" opacity="0.6" />
+  <path d="M0,540 C350,500 650,580 950,520 C1100,500 1150,530 1200,520 L1200,675 L0,675 Z" fill="#164e63" opacity="0.8" />
+
+  <!-- Aquaculture / Dairy Processing Graphics -->
+  <g transform="translate(680, 140)">
+    <!-- Biofloc / Aquaculture Tank -->
+    <ellipse cx="220" cy="220" rx="160" ry="60" fill="#06b6d4" fill-opacity="0.2" stroke="#67e8f9" stroke-width="2.5" />
+    <path d="M60,220 L60,330 C60,370 380,370 380,330 L380,220" fill="#0891b2" fill-opacity="0.3" stroke="#67e8f9" stroke-width="2.5" />
+    <!-- Aerator wheel & bubbles -->
+    <circle cx="220" cy="220" r="26" fill="#164e63" stroke="#a5f3fc" stroke-width="2" />
+    <line x1="220" y1="194" x2="220" y2="246" stroke="#a5f3fc" stroke-width="2" />
+    <line x1="194" y1="220" x2="246" y2="220" stroke="#a5f3fc" stroke-width="2" />
+    <circle cx="150" cy="260" r="6" fill="#cffafe" opacity="0.7" />
+    <circle cx="180" cy="290" r="8" fill="#cffafe" opacity="0.6" />
+    <circle cx="270" cy="270" r="7" fill="#cffafe" opacity="0.7" />
+    <!-- Milk Can / Chiller Silhouette -->
+    <g transform="translate(290, 80)">
+      <rect x="20" y="40" width="80" height="120" rx="16" fill="#ffffff" fill-opacity="0.2" stroke="#ffffff" stroke-width="2" />
+      <rect x="35" y="24" width="50" height="20" rx="6" fill="#ffffff" fill-opacity="0.4" stroke="#ffffff" stroke-width="1.5" />
+      <path d="M15,50 Q10,70 15,90" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+      <path d="M105,50 Q110,70 105,90" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+    </g>
+  </g>
+
+  <!-- Left Card -->
+  <g transform="translate(80, 110)">
+    <rect width="440" height="390" rx="24" fill="url(#cardGradDairy)" stroke="#22d3ee" stroke-width="1.5" />
+    <rect x="32" y="36" width="180" height="34" rx="17" fill="#0891b2" fill-opacity="0.3" stroke="#22d3ee" stroke-width="1" />
+    <circle cx="50" cy="53" r="6" fill="#22d3ee" />
+    <text x="66" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#a5f3fc">LIVESTOCK &amp; AQUA</text>
+
+    <text x="32" y="125" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Dairy, Fisheries &amp;</text>
+    <text x="32" y="165" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="#67e8f9" letter-spacing="-0.5">Animal Husbandry</text>
+
+    <text x="32" y="210" font-family="system-ui, sans-serif" font-size="15" fill="#ecfeff">
+      <tspan x="32" dy="0">Modern dairy farm management, biofloc</tspan>
+      <tspan x="32" dy="24">aquaculture, hatchery, animal nutrition &amp; health.</tspan>
+    </text>
+
+    <g transform="translate(32, 275)">
+      <rect width="175" height="70" rx="14" fill="#164e63" fill-opacity="0.7" stroke="#0e7490" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#67e8f9">Quality Testing</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Fat / SNF %</text>
+    </g>
+
+    <g transform="translate(225, 275)">
+      <rect width="180" height="70" rx="14" fill="#164e63" fill-opacity="0.7" stroke="#0e7490" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#67e8f9">Fish Culture</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">Biofloc &amp; Cage</text>
+    </g>
+  </g>
+</svg>

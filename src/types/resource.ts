@@ -15,4 +15,12 @@ export interface LearningResource {
   freeAccessStatus: 'free' | 'partially-free' | 'unknown'
   certificateStatus: 'free' | 'paid' | 'not-offered' | 'unknown'
   verificationStatus: VerificationStatus
+  duration?: string
+  skillsCovered?: string[]
+  learningOutcomes?: string[]
+  prerequisites?: string
+  completionCriteria?: string
+  hasPracticalActivity?: boolean
+  signInRequired?: boolean
+  dateChecked?: string
 }

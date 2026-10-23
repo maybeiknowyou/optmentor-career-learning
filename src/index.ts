@@ -12,6 +12,7 @@ export { Tabs } from './components/ui/Tabs'
 export { EmptyState, ErrorState, LoadingState } from './components/feedback/States'
 export { CareerExplorerPage } from './features/careers/pages/CareerExplorerPage'
 export { CareerDetailPage } from './features/careers/pages/CareerDetailPage'
+export { CareerResourcesPage } from './features/resources/pages/CareerResourcesPage'
 export { RoadmapView } from './features/roadmaps/components/Roadmap'
 export { RoadmapPage } from './features/roadmaps/pages/RoadmapPage'
 export { RoadmapStagePage } from './features/roadmaps/pages/RoadmapStagePage'
@@ -22,10 +23,33 @@ export { AssessmentResultsPage } from './features/assessments/pages/AssessmentRe
 export { BadgesPage } from './features/badges/pages/BadgesPage'
 export { careers, getCareerById } from './data/careers'
 export { roadmaps, getRoadmapByCareerId, getStageById } from './data/roadmaps'
-export { resources, resourcesForCareer, resourcesForStage, resourceStats } from './data/resources'
-export type { Career, CareerCategory, CareerImageAsset } from './types/career'
+export { resources, resourcesForCareer, resourcesForStage, getResourceById, resourceStats } from './data/resources'
+export { assessments, getAssessmentById } from './data/assessments'
+export { badgeDefinitions, getEarnedBadges } from './data/badges'
+export {
+  readProgress,
+  setActiveCareer,
+  visitStage,
+  isStageCompleted,
+  completeStage,
+  startCourse,
+  completeCourse,
+  getCourseStatus,
+  careerProgress,
+  careerCourseProgress,
+  overallCareerProgress,
+} from './services/progressService'
+export type {
+  Career,
+  CareerCategory,
+  CareerImageAsset,
+  CareerSalaryInfo,
+  CareerMarketOutlook,
+  CareerOpportunity,
+  TrainingInstitution,
+} from './types/career'
 export type { Roadmap, RoadmapStage, RoadmapDifficulty } from './types/roadmap'
 export type { LearningResource, ResourceType, ResourceDifficulty, VerificationStatus } from './types/resource'
-export type { StageProgress, LearningProgressState } from './types/progress'
+export type { StageProgress, CourseProgress, LearningProgressState } from './types/progress'
 export type { Assessment, AssessmentQuestion, AssessmentAttempt } from './types/assessment'
 export type { BadgeDefinition, EarnedBadge } from './types/badge'

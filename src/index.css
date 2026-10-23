@@ -51,6 +51,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .motion-reveal { opacity: 0; transform: translateY(12px) scale(.985); transition: opacity 320ms ease, transform 380ms cubic-bezier(.2,.8,.2,1); }
 .motion-reveal-visible { opacity: 1; transform: translateY(0) scale(1); }
 
+
 .optmentor-theme-light { --module-page: #f4f7fb; --module-surface: #ffffff; --module-surface-soft: #f8fbff; --module-border: #dce5f0; --module-ink: #0f172a; --module-muted: #64748b; }
 .optmentor-theme-dark { --module-page: #0b1728; --module-surface: #13243a; --module-surface-soft: #182c45; --module-border: #2b4058; --module-ink: #edf5ff; --module-muted: #a7bad0; background: var(--module-page); color: var(--module-ink); color-scheme: dark; }
 .optmentor-theme-dark.bg-page, .optmentor-theme-dark .bg-page { background-color: var(--module-page) !important; }

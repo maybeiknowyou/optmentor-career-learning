@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <radialGradient id="glow" cx="65%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#6ee7b7" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+  <circle cx="780" cy="270" r="340" fill="url(#glow)" />
+
+  <!-- Geometric Grid & Farm Contours -->
+  <g stroke="#a7f3d0" stroke-width="1" opacity="0.15">
+    <line x1="0" y1="135" x2="1200" y2="135" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="0" y1="405" x2="1200" y2="405" />
+    <line x1="0" y1="540" x2="1200" y2="540" />
+    <line x1="200" y1="0" x2="200" y2="675" />
+    <line x1="400" y1="0" x2="400" y2="675" />
+    <line x1="600" y1="0" x2="600" y2="675" />
+    <line x1="800" y1="0" x2="800" y2="675" />
+    <line x1="1000" y1="0" x2="1000" y2="675" />
+  </g>
+
+  <!-- Rolling Farm Terrain Curves -->
+  <path d="M0,520 Q300,460 600,530 T1200,500 L1200,675 L0,675 Z" fill="#065f46" opacity="0.7" />
+  <path d="M0,570 Q350,510 750,580 T1200,560 L1200,675 L0,675 Z" fill="#022c22" opacity="0.9" />
+
+  <!-- Smart Greenhouse & Sensor Tower Illustration -->
+  <g transform="translate(680, 160)">
+    <!-- Greenhouse Frame -->
+    <polygon points="120,80 280,80 340,180 60,180" fill="url(#cardGrad)" stroke="#6ee7b7" stroke-width="2.5" />
+    <polygon points="60,180 340,180 340,320 60,320" fill="#064e3b" fill-opacity="0.6" stroke="#6ee7b7" stroke-width="2" />
+    <!-- Greenhouse Panes -->
+    <line x1="200" y1="80" x2="200" y2="320" stroke="#34d399" stroke-width="2" opacity="0.6" />
+    <line x1="130" y1="130" x2="130" y2="320" stroke="#34d399" stroke-width="1.5" opacity="0.4" />
+    <line x1="270" y1="130" x2="270" y2="320" stroke="#34d399" stroke-width="1.5" opacity="0.4" />
+    <line x1="60" y1="250" x2="340" y2="250" stroke="#34d399" stroke-width="1.5" opacity="0.4" />
+
+    <!-- Smart Sprout / Crop Nodes -->
+    <circle cx="130" cy="285" r="9" fill="#34d399" />
+    <circle cx="200" cy="285" r="11" fill="#10b981" />
+    <circle cx="270" cy="285" r="9" fill="#34d399" />
+    <!-- Plants sprouting -->
+    <path d="M200,285 Q180,260 190,240 Q205,255 200,285" fill="#6ee7b7" />
+    <path d="M200,285 Q220,260 210,240 Q195,255 200,285" fill="#a7f3d0" />
+
+    <!-- IoT Weather/Soil Telemetry Station -->
+    <rect x="380" y="140" width="10" height="220" fill="#34d399" opacity="0.8" />
+    <!-- Solar sensor top -->
+    <polygon points="360,140 410,140 420,120 350,120" fill="#38bdf8" stroke="#0284c7" stroke-width="1.5" />
+    <!-- Anemometer -->
+    <circle cx="385" cy="100" r="6" fill="#fbbf24" />
+    <line x1="365" y1="100" x2="405" y2="100" stroke="#fbbf24" stroke-width="2" />
+    <circle cx="365" cy="100" r="5" fill="#f59e0b" />
+    <circle cx="405" cy="100" r="5" fill="#f59e0b" />
+    <!-- Wi-Fi / Sensor signal arcs -->
+    <path d="M370,80 A20,20 0 0,1 400,80" fill="none" stroke="#6ee7b7" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M360,68 A35,35 0 0,1 410,68" fill="none" stroke="#6ee7b7" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+  </g>
+
+  <!-- Left Glassmorphic UI telemetry card -->
+  <g transform="translate(80, 110)">
+    <rect width="440" height="390" rx="24" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1.5" />
+    
+    <!-- Header Badge -->
+    <rect x="32" y="36" width="160" height="34" rx="17" fill="#10b981" fill-opacity="0.25" stroke="#34d399" stroke-width="1" />
+    <circle cx="50" cy="53" r="6" fill="#34d399" />
+    <text x="66" y="58" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#a7f3d0">SMART AGRI-TECH</text>
+
+    <!-- Main Title -->
+    <text x="32" y="125" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Agriculture &amp;</text>
+    <text x="32" y="165" font-family="system-ui, sans-serif" font-size="34" font-weight="800" fill="#34d399" letter-spacing="-0.5">AgriTech Systems</text>
+
+    <!-- Subtitle -->
+    <text x="32" y="210" font-family="system-ui, sans-serif" font-size="15" fill="#d1fae5" width="370">
+      <tspan x="32" dy="0">Modern agronomy, precision farming,</tspan>
+      <tspan x="32" dy="24">soil telemetry &amp; automated irrigation.</tspan>
+    </text>
+
+    <!-- Data metric chips -->
+    <g transform="translate(32, 275)">
+      <rect width="175" height="70" rx="14" fill="#022c22" fill-opacity="0.6" stroke="#059669" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#6ee7b7">Soil Moisture</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">82% Optimum</text>
+    </g>
+
+    <g transform="translate(225, 275)">
+      <rect width="180" height="70" rx="14" fill="#022c22" fill-opacity="0.6" stroke="#059669" stroke-width="1" />
+      <text x="18" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#6ee7b7">Drone Mapping</text>
+      <text x="18" y="55" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">NDVI Active</text>
+    </g>
+  </g>
+</svg>
